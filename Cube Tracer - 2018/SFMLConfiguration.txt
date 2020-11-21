@@ -1,0 +1,75 @@
+________________________****Pathing Walkthrough****__________________________
+
+-Written By Dylan Kapustka-
+
+	BEGIN:
+
+	Open the "Solution Explorer" Tab on the right hand side of screen.
+
+	Right Click on the "CUBE TRACER" Project File (not Solution 'Cube Tracer')
+
+	Go to Properties
+	
+	Ensure your Configuration settings at the top left-hand side of the properties window is set to "All Configurations"
+	
+	On the left hand side there are multiple tabs, click on "VC++ Directories"
+
+	in "VC++ Directories" find "Include Directories" click on it, then click on the drop down arrow on the right 
+
+	Select <Edit..>
+
+	Click on the red colored X to clear the previous path then click on the folder* icon and the "..." to open file explorer
+
+	The file explorer should already open within our project file
+
+	Look at the file path and backtrack once into "DK - CUBE TRACER" to get into the main project folder
+
+	You should see a folder called "sfml"
+
+	click on "sfml" and within the folder you should see another folder called "include"
+
+	Select "include then click "Select Folder", click "ok" then "apply"
+
+	Now we need to add our "lib" folder by repeating our same pathing process we did for include
+
+	Still within the VC++ tab, a little further down we should see "Library Directories"
+
+	Click on it and repeat the same process.. Click on edit, delete previous pathing, click on folder* and "..."
+
+	When the File explorer opens the project file, just click back again on the filepath and find the same "sfml" folder
+
+	click on it, and this time instead off adding the "include" folder, we are adding the "lib" folder
+
+	select the "lib" folder, hit ok, then apply.
+
+	Next click on the "C++" tab located on the left and Under "VC++ Directories"
+	
+	This time you'll notice a drop down section.. We want to click on the first, "General"
+
+	Ensure, just like previously, that Configuration on the top left is set to "All Configurations" 
+
+	Within General we are going to repeat the process we just did, and add the "include" library again.
+
+	Click on "Additional Include Directories" and repeat the same folder routing process
+
+	once the "include" folder from "sfml" has been selected, hit ok and apply.
+
+	Last but  not least we need to add the entire sfml folder somewhere
+
+	click on the "Linker" tab located on the left and Under "C++"
+
+	We want to click on "General"
+
+	Within General find "Adittional Library Directories"
+
+	Click on this and repeat the process done throughout this walkthrough
+
+	However this time, rather than opening the sfml file and clicking on a folder like "include" or lib"
+
+	Just select the entire sfml folder
+
+	Once you've selected the entire sfml folder, hit ok then apply
+
+	You have now linked everything to compile the program within Visual Studio.
+
+	If there are any errors existing check your pathing and outsource to other options of configuration. 
